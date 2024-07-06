@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a84d82e1-0afc-4e5c-a6f2-c023d408997d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/movie_assessment/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_assessment/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_assessment/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_assessment/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_assessment/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_assessment/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_assessment/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_assessment/public/favicon.ico" afterDir="false" />
+    <list default="true" id="a84d82e1-0afc-4e5c-a6f2-c023d408997d" name="Changes" comment="Vue Project set up using npm init vue@latest">
       <change afterPath="$PROJECT_DIR$/movie_assessment/src/App.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/movie_assessment/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_assessment/src/assets/logo.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/movie_assessment/src/assets/main.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/movie_assessment/src/components/MovieItem.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/movie_assessment/src/components/MovieList.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/movie_assessment/src/components/SearchBar.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/movie_assessment/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_assessment/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Composition API Component" />
         <option value="package.json" />
+        <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -63,6 +52,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/mf384/OneDrive/Desktop/Movie_Assessment_Frontend",
@@ -88,8 +78,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720261652509</updated>
-      <workItem from="1720261653592" duration="2670000" />
+      <workItem from="1720261653592" duration="4482000" />
     </task>
+    <task id="LOCAL-00001" summary="Vue Project set up using npm init vue@latest">
+      <option name="closed" value="true" />
+      <created>1720264652869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720264652870</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,5 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Vue Project set up using npm init vue@latest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vue Project set up using npm init vue@latest" />
   </component>
 </project>
