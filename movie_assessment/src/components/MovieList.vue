@@ -6,7 +6,7 @@
     </div>
     <div v-else class="row mt-3">
       <div v-for="movie in movies" :key="movie.Title" class="col-md-4 mb-3">
-        <div class="card h-100">
+        <div class="card h-100" @click="showMovieDetails(movie.Title)">
           <img :src="movie.Poster" class="card-img-top" alt="Movie Poster">
           <div class="card-body">
             <h5 class="card-title">{{ movie.Title }}</h5>
@@ -63,6 +63,10 @@ export default {
     clearSearch() {
       this.searchQuery = '';
       this.getPopularMovies();
+    },
+    showMovieDetails(title) {
+      const encodedTitle = encodeURIComponent(title).replace(/%20/g, '+');
+      this.$router.push({ name: 'MovieDetails', params: { title: encodedTitle } });
     }
   }
 }
@@ -82,5 +86,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 </style>
