@@ -6,7 +6,15 @@
         <h2 class="card-title">{{ movie.Title }}</h2>
         <p class="card-text"><strong>Plot:</strong> {{ movie.Plot }}</p>
         <p class="card-text"><strong>Released:</strong> {{ movie.Released }}</p>
+        <p class="card-text"><strong>Genre:</strong> {{ movie.Genre }}</p>
+        <p class="card-text"><strong>Actors:</strong> {{ movie.Actors }}</p>
+        <p class="card-text"><strong>Writers:</strong> {{ movie.Writer }}</p>
+        <p class="card-text"><strong>Director:</strong> {{ movie.Director }}</p>
+        <p class="card-text"><strong>Awards:</strong> {{ movie.Awards }}</p>
+        <p class="card-text"><strong>Languages:</strong> {{ movie.Language }}</p>
+        <p class="card-text"><strong>imdbRating:</strong> {{ movie.imdbRating }}</p>
       </div>
+      <router-link :to="{ name: 'MovieList' }" class="btn btn-primary mt-3">Back to Movies List</router-link>
     </div>
     <div v-else>
       <p>No Data Found!</p>

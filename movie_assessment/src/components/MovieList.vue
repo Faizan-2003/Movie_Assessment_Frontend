@@ -10,9 +10,7 @@
           <img :src="movie.Poster" class="card-img-top" alt="Movie Poster">
           <div class="card-body">
             <h5 class="card-title">{{ movie.Title }}</h5>
-            <p class="card-text">{{ movie.Plot }}</p>
-            <p class="card-text">{{ movie.Year }}</p>
-            <p class="card-text"><small class="text-muted">{{ movie.Released }}</small></p>
+            <p class="card-text"><small class="text-muted">{{ movie.Year }}</small></p>
           </div>
         </div>
       </div>
@@ -54,7 +52,7 @@ export default {
             .then(response => {
               if (response.data) {
                 if (response.data.Title) {
-                  this.movies = [response.data]; 9
+                  this.movies = [response.data];
                 } else if (response.data.Search) {
                   this.movies = response.data.Search;
                 } else {
@@ -78,7 +76,7 @@ export default {
     },
     showMovieDetails(title) {
       const encodedTitle = encodeURIComponent(title).replace(/%20/g, '+');
-      this.$router.push({ name: 'MovieDetails', params: { title: encodedTitle } });
+      this.$router.push({name: 'MovieDetails', params: {title: encodedTitle}});
     }
   }
 }
