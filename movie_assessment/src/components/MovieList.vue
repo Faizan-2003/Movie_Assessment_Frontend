@@ -11,7 +11,8 @@
           <div class="card-body">
             <h5 class="card-title">{{ movie.Title }}</h5>
             <p class="card-text">{{ movie.Plot }}</p>
-            <p class="card-text"><small class="text-muted">{{ movie.Year }}</small></p>
+            <p class="card-text">{{ movie.Year }}</p>
+            <p class="card-text"><small class="text-muted">{{ movie.Released }}</small></p>
           </div>
         </div>
       </div>
@@ -38,7 +39,7 @@ export default {
   },
   methods: {
     getPopularMovies() {
-      axios.get(`http://localhost:8080/api/movies/popular`)
+      axios.get(`http://localhost:8080/api/movies/all`)
           .then(response => {
             this.movies = response.data;
           })
@@ -51,10 +52,21 @@ export default {
       if (query) {
         axios.get(`http://localhost:8080/api/movies/search?title=${query}`)
             .then(response => {
-              this.movies = response.data ? [response.data] : [];
+              if (response.data) {
+                if (response.data.Title) {
+                  this.movies = [response.data]; 9
+                } else if (response.data.Search) {
+                  this.movies = response.data.Search;
+                } else {
+                  this.movies = [];
+                }
+              } else {
+                this.movies = [];
+              }
             })
             .catch(error => {
               console.error(error);
+              this.movies = [];
             });
       } else {
         this.getPopularMovies();

@@ -4,12 +4,12 @@
       <img :src="movie.Poster" class="card-img-top" alt="Movie Poster">
       <div class="card-body">
         <h2 class="card-title">{{ movie.Title }}</h2>
-        <p class="card-text"><strong>Year:</strong> {{ movie.Year }}</p>
         <p class="card-text"><strong>Plot:</strong> {{ movie.Plot }}</p>
+        <p class="card-text"><strong>Released:</strong> {{ movie.Released }}</p>
       </div>
     </div>
     <div v-else>
-      <p>Loading...</p>
+      <p>No Data Found!</p>
     </div>
   </div>
 </template>
